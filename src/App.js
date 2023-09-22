@@ -2,6 +2,7 @@ import React, { useRef, useEffect, useState } from "react";
 import Tick from "@pqina/flip";
 import "@pqina/flip/dist/flip.min.css";
 import Marquee from "react-fast-marquee";
+import dayjs from "dayjs";
 import "./App.css";
 
 function App() {
@@ -33,19 +34,23 @@ function App() {
             overflow: "hidden",
           }}
         >
-          <Card
-            role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
-            url={process.env.PUBLIC_URL + '/kh.png'}
-          />
-          <Card
-            role={"🍆 ស្ថាបនិកធំ ២៩ កញ្ញា 🍆"}
-            url={process.env.PUBLIC_URL + '/pd.png'}
-          />
-          <Card
-            role={"🍆 Gym Manager 🍆"}
-            url={process.env.PUBLIC_URL + '/nr.png'}
-          />
-          
+          <Marquee gradientWidth={200} speed={50}>
+          <Space />
+            <Card
+              role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
+              url={process.env.PUBLIC_URL + "/kh.png"}
+            />
+            <Space />
+            <Card
+              role={"🍆 ស្ថាបនិកធំ ២៩ កញ្ញា 🍆"}
+              url={process.env.PUBLIC_URL + "/pd.png"}
+            />
+            <Space />
+            <Card
+              role={"🍆 Gym Manager 🍆"}
+              url={process.env.PUBLIC_URL + "/nr.png"}
+            />
+          </Marquee>
         </div>
         <div
           style={{
@@ -56,7 +61,7 @@ function App() {
             width: "100%",
             overflow: "hidden",
             justifyContent: "center",
-            alignItems: 'center'
+            alignItems: "center",
           }}
         >
           <Space />
@@ -67,7 +72,7 @@ function App() {
             <img
               onClick={() => {}}
               width={100}
-              style={{ objectFit: "contain", alignSelf:'center' }}
+              style={{ objectFit: "contain", alignSelf: "center" }}
               src={process.env.PUBLIC_URL + "/telegram.png"}
               alt="new"
             />
@@ -123,7 +128,18 @@ export const FlipDate = ({ value }) => {
 
   useEffect(() => {
     const offset = new Date();
-    const timeDuration = Tick.helper.duration(8, "days");
+    const date1 = dayjs("2023-09-29");
+    const date2 = dayjs();
+
+    let hours = date1.diff(date2, "hours");
+    const days = Math.floor(hours / 24);
+    hours = hours - days * 24;
+
+    console.log("Days: ", days);
+    console.log("Hours: ", hours);
+    const diffDays = days;
+
+    const timeDuration = Tick.helper.duration(diffDays, "days");
 
     // add 24 hours to get final deadline
     const deadline = new Date(
