@@ -17,6 +17,25 @@ function App() {
           flexDirection: "column",
         }}
       >
+        <div>
+          <img
+            onClick={() => {}}
+            width={100}
+            style={{ objectFit: "contain", alignSelf: "center" }}
+            src={process.env.PUBLIC_URL + "/clickhere.gif"}
+            alt="new"
+          />
+        </div>
+
+        <a href="/agenda">
+          <img
+            onClick={() => {}}
+            width={100}
+            style={{ objectFit: "contain", alignSelf: "center" }}
+            src={process.env.PUBLIC_URL + "/29.png"}
+            alt="new"
+          />
+        </a>
         <p style={{ fontSize: 30 }}>Save the date 29/09/2023</p>
         <p style={{ fontSize: 20 }}>Let countdown</p>
         <div style={{ fontSize: 100 }}>
@@ -35,7 +54,7 @@ function App() {
           }}
         >
           <Marquee gradientWidth={200} speed={50}>
-          <Space />
+            <Space />
             <Card
               role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
               url={process.env.PUBLIC_URL + "/kh.png"}

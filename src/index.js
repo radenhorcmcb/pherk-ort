@@ -1,15 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import "./index.css";
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
+import Agenda from './Agenda';
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <App />,
+  },
+  {
+    path: "/agenda",
+    element: <Agenda />,
+  },
+]);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RouterProvider router={router} />
   </React.StrictMode>,
-  document.getElementById('root')
+   document.getElementById('root')
 );
-
-reportWebVitals(sendToVercelAnalytics);
