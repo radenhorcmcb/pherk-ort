@@ -158,7 +158,7 @@ export const FlipDate = ({ value }) => {
     console.log("Hours: ", hours);
     const diffDays = days;
 
-    const timeDuration = Tick.helper.duration(diffDays, "days");
+    const timeDuration = Tick.helper.duration(24, "hours");
 
     // add 24 hours to get final deadline
     const deadline = new Date(
