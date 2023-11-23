@@ -57,12 +57,12 @@ function App() {
             <Space />
             <Card
               role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
-              url={process.env.PUBLIC_URL + "/nr.png"}
+              url={process.env.PUBLIC_URL + "/nr.jpg"}
             />
             <Space />
             <Card
               role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
-              url={process.env.PUBLIC_URL + "/kh1.png"}
+              url={process.env.PUBLIC_URL + "/kh1.jpeg"}
             />
             <Space />
             <Card
