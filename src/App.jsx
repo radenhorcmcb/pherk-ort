@@ -32,11 +32,11 @@ function App() {
             onClick={() => {}}
             width={100}
             style={{ objectFit: "contain", alignSelf: "center" }}
-            src={process.env.PUBLIC_URL + "/29.png"}
+            src={process.env.PUBLIC_URL + "/1dec.png"}
             alt="new"
           />
         </a>
-        <p style={{ fontSize: 30 }}>Save the date 29/09/2023</p>
+        <p style={{ fontSize: 30 }}>Save the date 01/12/2023</p>
         <p style={{ fontSize: 20 }}>Let countdown</p>
         <div style={{ fontSize: 100 }}>
           <FlipDate value={"80"} />
@@ -54,6 +54,16 @@ function App() {
           }}
         >
           <Marquee gradientWidth={200} speed={50}>
+            <Space />
+            <Card
+              role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
+              url={process.env.PUBLIC_URL + "/nr.png"}
+            />
+            <Space />
+            <Card
+              role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
+              url={process.env.PUBLIC_URL + "/kh1.png"}
+            />
             <Space />
             <Card
               role={"🍆 សហស្ថាបនិក ២៩ កញ្ញា 🍆"}
@@ -147,7 +157,7 @@ export const FlipDate = ({ value }) => {
 
   useEffect(() => {
     const offset = new Date();
-    const date1 = dayjs("2023-09-29");
+    const date1 = dayjs("2023-12-01");
     const date2 = dayjs();
 
     let hours = date1.diff(date2, "hours");
