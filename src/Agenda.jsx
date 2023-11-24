@@ -3,7 +3,7 @@ import "@pqina/flip/dist/flip.min.css";
 import "./App.css";
 
 export default function Agenda() {
-  const agenda = process.env.PUBLIC_URL + "/agenda.jpg";
+  const agenda = process.env.PUBLIC_URL + "/agd.jpg";
   return (
     <div className="App">
       <div
