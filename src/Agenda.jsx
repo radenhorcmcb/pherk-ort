@@ -16,7 +16,7 @@ export default function Agenda() {
         <div style={{
           padding: 100
         }}>
-          <a href="https://www.google.com/maps/place/THE+STORM+Pub+%26+Restaurant/@11.5632292,104.9093156,17z/data=!3m1!4b1!4m6!3m5!1s0x31095113843dbe77:0x74b1946f62070385!8m2!3d11.5632292!4d104.9093156!16s%2Fg%2F11gc8b5652?entry=ttu">
+          <a href="https://www.google.com/maps/place/TOP+Afterwork+Pub/@11.5789591,104.907656,17z/data=!3m1!4b1!4m6!3m5!1s0x310951c6ffce1461:0x67c8ef6f91508df8!8m2!3d11.5789591!4d104.9102309!16s%2Fg%2F11t1jdnmwx?entry=ttu">
             Our Location
           </a>
         </div>
